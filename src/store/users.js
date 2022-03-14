@@ -4,7 +4,9 @@ class UserStore extends StoreBase {
     constructor() {
         super({
             state: {
-                names: {...['Init', 'teste', '123']}
+                //Em caso de array
+                names: {...['Init', 'teste', '123']},
+                age: 123
             },
             actions: {
                 fetchName: () => {
